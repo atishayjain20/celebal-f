@@ -1,0 +1,16 @@
+.candidate{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: aquamarine;
+    border:2px solid red ;
+    box-shadow: azure;
+    color: black;
+  }
+  .candidate .vote {
+      float:right;
+      padding:15px;
+  }
