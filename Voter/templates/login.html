@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form method="POST">
-        {%csrf_token%}
+{% extends 'base.html' %}
+{% block title %}Please Login{% endblock title %}
+{% block body %}
+<div class="container my-3">
+<form method="POST">
+        {% csrf_token %}
         <label>Enter your Aadhar</label>
         <input name ="Aadhar" type="text">
-        <button type="submit">Sign In</button>
+        <button type="submit" class="btn btn-dark" style = 'margin-left:10px'>Sign In</button>
     </form>
-</body>
-</html>
+    </div>
+    {% endblock body %}
