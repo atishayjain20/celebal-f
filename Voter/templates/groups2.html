@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h4>{{voter.ward}}</h4>
+    <h4>{{voter.city}}</h4>
+    <h4>{{voter.name}}</h4>
+    <div class="form-container">
+    {%for group in groups%}
+    <div class="candidate">
+        <Label>Candidate Name:</Label>
+        {{group.name}}
+        <button class="vote">Vote</button><br>
+        <label>Party Name:</label>
+        {{group.party}}<br>
+        <label>Ward Name</label>
+        {{group.ward}}<br>
+        <label>City Name:</label>
+        {{group.city}}<br>
+    </div>
+        
+    {%endfor%}
+    </div>
+</body>
+</html>
